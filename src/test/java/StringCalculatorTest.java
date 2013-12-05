@@ -1,9 +1,14 @@
+import org.junit.Before;
 import org.junit.Test;
 
 public class StringCalculatorTest {
 
-    @Test
-    public void shouldAcceptInputStrings() {}
+    private StringCalculator calculator;
+
+    @Before
+    public void setup() {
+        calculator = new StringCalculator();
+    }
 
     @Test
     public void shouldReturnZeroOnEmptyString() {}
